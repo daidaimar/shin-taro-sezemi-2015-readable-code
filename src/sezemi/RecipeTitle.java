@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class RecipiTitle {
+public class RecipeTitle {
 	public static void main(String args[]) throws FileNotFoundException{
 		try {
 			// 読み取りファイルの指定
