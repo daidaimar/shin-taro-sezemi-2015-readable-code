@@ -22,6 +22,8 @@ public class RecipiTitle {
 				// 次のタイトルを取得
 				recipi_title = br.readLine();
 			}
+			
+			// ファイルを閉じる
 			br.close();
 		} catch (FileNotFoundException e){
 			e.printStackTrace();
