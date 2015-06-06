@@ -14,16 +14,16 @@ public class RecipiTitle {
 			BufferedReader br = new BufferedReader(new FileReader(target_file));
 			
 			// タイトルを一行ずつ読み取る
-			String recipi_title = br.readLine();
+			String recipe_title = br.readLine();
 			
 			// レシピIDの宣言
 			int recipe_id = 1;
 			
-			while(recipi_title != null){
+			while(recipe_title != null){
 				// レシピIDを付加して一行ずつ書き出す
-				System.out.println(recipe_id + ": " + recipi_title);
+				System.out.println(recipe_id + ": " + recipe_title);
 				// 次のタイトルを取得
-				recipi_title = br.readLine();
+				recipe_title = br.readLine();
 				// レシピIDをインクリメント
 				recipe_id ++;
 			}
