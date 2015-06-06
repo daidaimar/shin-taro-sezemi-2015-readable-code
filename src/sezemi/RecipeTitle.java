@@ -12,7 +12,7 @@ public class RecipeTitle {
 		
 		Scanner sc = new Scanner(System.in);
 		String target_file_name = sc.next();
-		int search_id = sc.nextInt();
+		int id_for_searching_recipe = sc.nextInt();
 		
 		try {
 			// 読み取りファイルの指定
@@ -26,13 +26,15 @@ public class RecipeTitle {
 			int recipe_id = 1;
 			
 			while(recipe_title != null){
-				// 次のタイトルを取得
-				recipe_title = br.readLine();
 				
-				if(recipe_id == search_id){
+				if(recipe_id == id_for_searching_recipe){
 					// レシピIDを付加して一行ずつ書き出す
 					System.out.println(recipe_id + ": " + recipe_title);
 				}
+				
+				// 次のタイトルを取得
+				recipe_title = br.readLine();
+				
 				// レシピIDをインクリメント
 				recipe_id ++;
 			}
