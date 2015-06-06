@@ -11,9 +11,9 @@ public class RecipeTitle {
 	public static void main(String args[]) throws FileNotFoundException{
 		
 		Scanner sc = new Scanner(System.in);
-		String target_file_name = sc.next();
-		int id_for_searching_recipe = sc.nextInt();
-		
+		String target_file_name = InputString(sc);
+		int id_for_searching_recipe = InputInt(sc);
+				
 		try {
 			// 読み取りファイルの指定
 			File target_file = new File(target_file_name);
@@ -28,7 +28,7 @@ public class RecipeTitle {
 			while(recipe_title != null){
 				
 				if(recipe_id == id_for_searching_recipe){
-					// レシピIDを付加して一行ずつ書き出す
+				    // レシピIDを付加して一行ずつ書き出す
 					System.out.println(recipe_id + ": " + recipe_title);
 				}
 				
@@ -46,5 +46,13 @@ public class RecipeTitle {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	private static String InputString(Scanner sc) {
+		return sc.next();
+	}
+	
+	private static int InputInt(Scanner sc){
+		return sc.nextInt();
 	}
 }
