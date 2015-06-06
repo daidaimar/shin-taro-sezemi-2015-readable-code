@@ -6,7 +6,7 @@ https://github.com/shin-taro/shin-taro-sezemi-2015-readable-code/blob/master/src
 * 変数の中身を意識して命名
 
 
-### 実際のコード
+### 一つ目
 String recipi_title = br.readLine();
 
 ### どうしてリーダブルだと考えたかの説明
@@ -20,9 +20,11 @@ while文の中でレシピタイトルの読み込み処理を読んで、
 その処理で何が読み込まれているのかを変数名から自然に理解していたことに気付いた。
 
 
-### 実際のコード
+### 二つ目
 String target_file_name = InputString(sc);
+
 ...
+
 File target_file = new File(target_file_name);
 
 ### どうしてリーダブルだと考えたかの説明
